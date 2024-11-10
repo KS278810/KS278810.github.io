@@ -1,56 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stock Price Watcher (Simulation)</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            color: #666;
-        }
-        #price {
-            font-size: 2em;
-            margin-top: 20px;
-            transition: color 0.3s;
-        }
-        #price.loading {
-            color: #ffa500;
-            font-style: italic;
-        }
-        #price.success {
-            color: #28a745;
-            font-weight: bold;
-        }
-        #price.error {
-            color: #dc3545;
-            font-weight: bold;
-        }
-        input, button {
-            padding: 10px;
-            font-size: 1em;
-            margin-top: 10px;
-        }
-        input {
-            width: 200px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>天気情報</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Stock Price Watcher (Simulation)</h1>
-    <p>Enter a stock symbol to watch its price simulation:</p>
-    <input type="text" id="symbol" placeholder="AAPL, MSFT, etc." />
-    <button>Watch</button>
-    <div id="price">--</div>
-
-    <!-- script.js を読み込み -->
-    <script src="script.js"></script>
+  <div class="weather-container">
+    <h1>天気情報</h1>
+    <div id="weather"></div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
