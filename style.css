@@ -1,0 +1,15 @@
+/* 読み込み中、成功、エラーのスタイル */
+#price.loading {
+    color: #ffa500;
+    font-style: italic;
+}
+
+#price.success {
+    color: #28a745;
+    font-weight: bold;
+}
+
+#price.error {
+    color: #dc3545;
+    font-weight: bold;
+}
