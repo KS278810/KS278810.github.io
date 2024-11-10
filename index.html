@@ -5,24 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stock Price Watcher</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
-        h1 { color: #333; }
-        p { color: #666; }
-        #price { font-size: 2em; margin-top: 20px; }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        #price {
+            font-size: 2em;
+            margin-top: 20px;
+            transition: color 0.3s;
+        }
+        #price.loading {
+            color: #ffa500;
+            font-style: italic;
+        }
+        #price.success {
+            color: #28a745;
+            font-weight: bold;
+        }
+        #price.error {
+            color: #dc3545;
+            font-weight: bold;
+        }
+        input, button {
+            padding: 10px;
+            font-size: 1em;
+            margin-top: 10px;
+        }
+        input {
+            width: 200px;
+        }
     </style>
 </head>
 <body>
     <h1>Stock Price Watcher</h1>
     <p>Enter a stock symbol to watch its price in real-time:</p>
     <input type="text" id="symbol" placeholder="AAPL, MSFT, etc." />
-    <button onclick="fetchStockPrice()">Watch</button>
+    <button>Watch</button>
     <div id="price">--</div>
 
-    <script>
-        async function fetchStockPrice() {
-            const symbol = document.getElementById('symbol').value;
-            if (!symbol) return;
-
-            // Yahoo Finance APIの代替APIエンドポイント
-            const apiKey = 'YOUR_API_KEY'; // 必要ならAPIキーを追加
-            const url = `htt
+    <!-- script.js を読み込み -->
+    <script src="script.js"></script>
+</body>
+</html>
