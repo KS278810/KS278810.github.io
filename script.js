@@ -5,6 +5,7 @@ const watchButton = document.querySelector('button');
 
 // 株価シミュレーションの初期値
 let currentPrice = 100.00;
+let intervalId; // インターバルIDを管理する変数
 
 // 株価をランダムに更新する関数
 function simulateStockPrice() {
@@ -31,8 +32,16 @@ watchButton.addEventListener('click', () => {
         return;
     }
 
+    // インターバルが既に動いている場合は停止してリセット
+    if (intervalId) {
+        clearInterval(intervalId);
+    }
+
+    // 初期メッセージと初期価格の設定
     displayMessage('Loading...', 'loading'); // 読み込み中の表示
+    currentPrice = 100.00; // 初期価格にリセット
+    simulateStockPrice(); // 最初の価格表示
 
     // 一定時間ごとに価格を更新
-    setInterval(simulateStockPrice, 2000); // 2秒ごとに更新
+    intervalId = setInterval(simulateStockPrice, 2000); // 2秒ごとに更新
 });
