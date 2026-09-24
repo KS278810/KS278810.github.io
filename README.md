@@ -1,11 +1,9 @@
 # KS278810.github.io
 
-Welcome to my GitHub Pages site! This is a sample website created with GitHub Pages to showcase my projects and experiments. Here, you can find information about my work, interests, and other personal projects.
+This is the GitHub Pages root. It redirects to the actual portfolio at
+[ks278810.github.io/website](https://ks278810.github.io/website/), which lives
+in the [`website`](https://github.com/KS278810/website) repository.
 
-## Features
-- Introduction to my work and portfolio
-- Links to my other GitHub projects
-- Contact information
-
-## Visit the site
-You can visit the live site here: [https://KS278810.github.io](https://KS278810.github.io)
+このリポジトリはリダイレクト専用です。実際のポートフォリオは
+[`website`](https://github.com/KS278810/website) リポジトリ、
+[ks278810.github.io/website](https://ks278810.github.io/website/) にあります。

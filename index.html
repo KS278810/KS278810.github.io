@@ -1,37 +1,23 @@
-<!DOCTYPE html>
-<html lang="ja">
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>天気情報</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kohei Shintani</title>
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://ks278810.github.io/website/">
+<meta http-equiv="refresh" content="0; url=https://ks278810.github.io/website/">
+<style>
+  body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;
+    background:#0A0B10;color:#ECEDF3;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;
+    text-align:center;padding:0 1.5rem;}
+  a{color:#8FC4FF;}
+</style>
 </head>
 <body>
-  <div class="weather-container">
-    <h1>天気情報</h1>
-    <div id="weather"></div>
-  </div>
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const weatherElement = document.getElementById("weather");
-
-      function getWeather() {
-        const hours = new Date().getHours();
-        let weatherText;
-
-        if (hours >= 6 && hours < 12) {
-          weatherText = "朝: 晴れ";
-        } else if (hours >= 12 && hours < 18) {
-          weatherText = "昼: 曇り";
-        } else {
-          weatherText = "夜: 雨";
-        }
-
-        return weatherText;
-      }
-
-      weatherElement.textContent = getWeather();
-    });
-  </script>
+  <p>
+    Redirecting to <a href="https://ks278810.github.io/website/">ks278810.github.io/website</a>…<br>
+    <span lang="ja">こちらのポートフォリオへ移動しています。</span>
+  </p>
 </body>
 </html>
